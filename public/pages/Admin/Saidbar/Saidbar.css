@@ -21,3 +21,20 @@ form >input{
     padding: 0 10px;
 }
 
+@media(max-width: 400px){
+    .input-all2{
+        position: fixed;
+        top: 35%;
+        left: 0%;
+        max-width: 300px;
+        padding: 40px 50px;
+        width: 100%;
+        border: 1px solid rgb(170, 170, 170);
+        margin-top: 150px;
+        line-height: 42px;
+        border-radius: 10px;
+        background-color: white;
+    
+      
+    } 
+}

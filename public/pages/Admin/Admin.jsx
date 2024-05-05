@@ -6,12 +6,15 @@ import { VscChevronDown,VscChevronUp } from "react-icons/vsc";
 import { CiMenuFries } from "react-icons/ci";
 import { CiLogin } from "react-icons/ci";
 import { useLocation } from 'react-router-dom';
+import { CiMenuBurger } from "react-icons/ci";
+
 import './Admin.css'
 
 
 const Admin = () => {
     const[menu,setMenu] =useState(false)
      const {pathname} = useLocation()
+     const [toogli,sitToggli] = useState(false)
 
     useEffect(()=>{
     window.scrollTo(0,0)
@@ -23,9 +26,9 @@ const Admin = () => {
 
 <div className="saidbar-row">
         <div className="admin-all container">
-            <div className="admin-row">
-                <ul className='ul-link'>
-                <img width={50} src="https://static-00.iconduck.com/assets.00/react-router-icon-2048x1116-jfeevj0l.png" alt="" />
+            <div className={`admin-row${toogli ? 'show' : ""}`}>
+                <ul className= "ul-link" >
+                <Link to={'/'}><img width={50} src="https://static-00.iconduck.com/assets.00/react-router-icon-2048x1116-jfeevj0l.png" alt="" /></Link>
                    <li>
                         <Link to={'/'}>React Router</Link>
                          </li>
@@ -51,6 +54,8 @@ const Admin = () => {
                             </div>
                           </li>
                 </ul>
+             
+           
                 <div className="logo">
                 <div className="logo-all">
                     <FaGithub />
@@ -59,10 +64,16 @@ const Admin = () => {
                     <Link to={'/'}><CiLogin /> <span>Login</span></Link>
                     </div>
                 </div>
+
+
+               
                
                 
               
             </div>
+            <button className='button' onClick={() => sitToggli(!toogli)}>
+                         <CiMenuBurger />
+                         </button>
         </div>
         </div>
 
@@ -83,12 +94,10 @@ const Admin = () => {
             <li><Link to={'mange'}>Mange</Link></li>
              <button className='btn'><Link className='a-tig' to={'/'}>Go Back</Link></button>
         </ul>
-   
+        <Outlet/> 
         
     </div>
     <div className="saidbar-row-all">
-       
-        <Outlet/> 
         </div>
 </div>  
   </div>

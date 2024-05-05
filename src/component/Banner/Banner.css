@@ -75,3 +75,37 @@
     padding: 90px 0;
     width: 100%;
 }
+
+@media(max-width:500px){
+    .banner__item-parag >h1{
+        max-width: 601.26px;
+        font-family: Quicksand;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 42px;
+        color: white;
+    }
+    h2{
+        opacity: .6;
+        margin: 35px 0;
+        color: white;
+    }
+}
+@media(max-width:450px){
+    .banner__item-parag >h1{
+        max-width: 601.26px;
+        width: 100%;
+        font-family: Quicksand;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        color: white;
+        text-align: center;
+    }
+    h2{
+        opacity: .6;
+        margin: 35px 0;
+        color: white;
+        text-align: center;
+    }
+}

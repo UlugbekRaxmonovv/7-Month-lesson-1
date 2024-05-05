@@ -33,3 +33,36 @@ body{
     font-size: 20px;
 
 }
+.button{
+    display: none;
+    padding: 8px 22px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(135, 216, 238);
+}
+@media(max-width:900px){
+    .button{
+        display: block;
+    } 
+    .link{
+        position: absolute;
+        top: 100px;
+        left: 0;    
+        width: 100%;
+        padding: 20px 0;
+        background: white;
+        box-shadow: 0 3px 5px #0002;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease;
+        z-index: 10;
+        transform-origin: top;
+        text-align: left;
+        transform: scaleY(0);
+    }
+    .link.show{
+        transform: scaleY(1);
+    }
+}

@@ -38,3 +38,17 @@ form >button{
     margin-top: 20px;
     margin-left: 30%;
 }
+@media(max-width: 400px){
+    
+    .wrappirr{
+        display: flex;
+        margin-left: -40%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 100px;
+        padding: 20px 0;
+        background-color: white;
+    }
+}
