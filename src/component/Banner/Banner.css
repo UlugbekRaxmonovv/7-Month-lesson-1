@@ -1,0 +1,77 @@
+.banner__swiper-all{
+    padding: 180px 0;
+}
+.banner{
+    padding: 50px 0;
+}
+.banner__swiper{
+    padding: 20px 0;
+}
+.banner__swiper img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+.banner__item-1{
+    background-image: url('https://vodiy24.uz/frontend/web/uploads/November2020/photo_2020-10-31_16-12-14.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 30px;
+    padding: 90px 0;
+    width: 100%;
+}
+.banner__item-parag{
+    padding: 0 95px ;
+    h1{
+        max-width: 601.26px;
+        font-family: Quicksand;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 72px;
+        color: white;
+    }
+    h2{
+        opacity: .6;
+        margin: 35px 0;
+        color: white;
+    }
+    form{
+        max-width: 350px;
+        border-radius: 50px;
+        background-color: #fff;
+        padding: 0 20px ;
+        input{
+            border: none;
+            outline: none;
+
+        }
+        button{
+           border-radius: 50px;
+           padding: 20px; 
+           background-color: #3BB77E;
+           border: 1px solid #3BB77E;
+           color: #fff;
+           position: relative;
+           right: -87px;
+        }
+    }
+}
+.banner__item-2{
+    background-image: url('https://vodiy24.uz/frontend/web/uploads/November2020/photo_2020-10-31_16-12-11.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 30px;
+    padding: 90px 0;
+    width: 100%;
+}
+.banner__item-3{
+    background-image: url('https://storage.kun.uz/source/9/TrIx94n2zqU6UA9OPAHI-rIMpRJODfvV.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 30px;
+    padding: 90px 0;
+    width: 100%;
+}

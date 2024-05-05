@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sedan:ital@0;1&display=swap');
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    background-color: white;
+    box-shadow: 2px 2px 8px 4px rgb(182, 181, 181);
+    z-index: 20000;
+    transition: all .5s linear;
+}
+.link-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header.top{
+    padding: 4px;
+    transition: all .5s linear;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.link li >a{
+    font-size: 20px;
+
+}

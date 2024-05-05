@@ -1,0 +1,152 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+.saidbar{
+    position: static;
+    top: 20%;
+    width: 100%;
+   margin-left: -100%;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    transition: all .5s linear;
+
+    
+}
+.saidbar.show{
+    /* position: fixed; */
+    margin-left: 0%;
+}
+.saidbar-all{
+    height: 500vh;
+    width: 100%;
+    background:rgb(194, 194, 194);
+    margin-top: 1%;
+    overflow: scroll;
+
+  
+   
+}
+
+.btn{
+    padding: 8px 32px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px rgb(181, 181, 181);
+    background-color:  dodgerblue;
+    
+
+
+}
+.img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+.img-all >img{
+    width: 100px;
+    border-radius: 50px;
+}
+.a-tig{
+    color: white
+}
+.saidbar-all ul li  >a{
+    font-size: 20px;
+    line-height: 55px;
+}
+/* .saidbar-row >button{
+    margin-left: 100%;
+} */
+.saidbar-row{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 2000;
+    box-shadow: 2px 2px 8px 4px rgb(182, 181, 181);
+}
+
+.admin-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 150px; */
+  
+   
+}
+.ul-link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.li-admin{
+    padding: 4px 32px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ul li> a{
+    font-size: 20px;
+}
+ul li > button{
+    padding: 12px 12px;
+    background-color:rgb(192, 192, 192);
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 8px 1px rgb(182, 181, 181);
+
+}
+ul li  button>svg{
+    color: black;
+}
+.li-admin >button{
+    border: none;
+    background-color: rgb(196, 196, 196);
+    font-size: 15px;
+}
+.li-admin-row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.li-admin-alt >svg{
+    font-size: 15px;
+}
+.btn1{
+    padding: 12px 12px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.btn1 >svg{
+    font-size: 30px;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo-all{
+    padding: 12px 12px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,86 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   gap: 60px;
+   padding: 120px 0;
+}
+
+
+      
+      h1{
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left; 
+      }
+      ul li a{
+         font-family: Roboto;
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 30px;
+         letter-spacing: 0em;
+         text-align: left;
+         color: black;
+         
+        }
+       
+       p{
+        max-width: 379px;
+        width: 100%;
+        height: 48px;        
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        
+       }
+       .input{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+       }
+        input{
+          max-width: 300px;
+          width: 100%;
+          height: 48px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          background-color: white;
+          border: 1px solid rgb(183, 183, 183);
+        }
+ 
+      
+         
+        .btn9{
+          max-width: 137px;
+          height: 48px;
+          width: 100%;
+          background: #CF6F49;
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: center;
+         border: none;
+         border-radius: 10px;
+         margin-left: 35%;
+        
+         color: white; 
+         transition: all .2s linear; 
+        }
+        .btn9 >p{
+            text-align: center;
+            margin-top: 16%;
+        }
+        .btn9:hover{
+            transform: scale(1.1);
+            
+        }
+
