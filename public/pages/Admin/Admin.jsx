@@ -13,8 +13,8 @@ import './Admin.css'
 
 const Admin = () => {
     const[menu,setMenu] =useState(false)
-     const {pathname} = useLocation()
-     const [toogli,sitToggli] = useState(false)
+    const {pathname} = useLocation()
+    const [toogli,sitToggli] = useState(false)
 
     useEffect(()=>{
     window.scrollTo(0,0)

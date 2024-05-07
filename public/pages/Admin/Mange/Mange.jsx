@@ -2,11 +2,20 @@ import React,{useState,useEffect} from 'react';
 import './Mange.css'
 import axios from '../../../../src/api/index';
 import { toast } from 'react-toastify';
+import { useLocation } from 'react-router-dom';
 
 
 const Mange = () => {
     const [data,setData] =useState(null)
     const [reloid,setReloid] =useState(false)
+
+    const {pathname} = useLocation()
+    useEffect(()=>{
+        window.scrollTo(0,0)
+        },
+        [pathname]
+    )
+
     useEffect(() =>{
         axios
         .get('/card')

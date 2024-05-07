@@ -1,7 +1,8 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './Saidbar.css'
 import axios  from '../../../../src/api/index';
 import { toast } from 'react-toastify';
+import { useLocation } from 'react-router-dom';
 
 const initialState ={
     Ism:"",
@@ -9,6 +10,12 @@ const initialState ={
     Yoshi:""
 }
 const Saidbar = () => {
+    const {pathname} = useLocation()
+    useEffect(()=>{
+        window.scrollTo(0,0)
+        },
+        [pathname]
+    )
     const [data,setData] =useState(initialState)
 
 
